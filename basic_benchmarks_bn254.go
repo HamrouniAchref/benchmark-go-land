@@ -20,7 +20,7 @@ import (
 )
 
 var x1 = []int{1,2,3,4,8,16,32}
-var x2 = []int{64,128,256,512,516,600}
+var x2 = []int{64,128,256,512,1024,2048	}
 var y1  [7][8]time.Duration	 
 var y2  [6][8]time.Duration
 
@@ -121,7 +121,7 @@ func main() {
 	//f.SetCellValue(nil,"time Mexp G1 length n","time Mexp G2 length n","time conversion","time IsInSubGroup Affine length n","time IsInSubGroup Jac length n","time pairing length n","time IsInSubGroup Jac length 1","time pairing length 1")
 	//f.SetCellValue(nil,"time Mexp G1 length n","time Mexp G2 length n","time conversion","time IsInSubGroup Affine length n","time IsInSubGroup Jac length n","time pairing length n","time IsInSubGroup Jac length 1","time pairing length 1")
 
-	if err := f.SaveAs("Boo2.xlsx"); err != nil {
+	if err := f.SaveAs("basic_benchmarks_bn254.xlsx"); err != nil {
         fmt.Println(err)
     }
 	//for j, n := range x2 {
